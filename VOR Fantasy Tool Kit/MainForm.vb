@@ -34,6 +34,7 @@ Public Partial Class MainForm
 		button9.Hide
 		horDiv.Hide
 		
+		getCurrentWeek.scrapeHTML
 		
 	End Sub
 End Class
