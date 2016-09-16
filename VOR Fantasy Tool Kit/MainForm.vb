@@ -21,6 +21,19 @@ Public Partial Class MainForm
 	End Sub
 	
 	Sub MainFormLoad(sender As Object, e As EventArgs)
-		splashScreen.show()
+		
+		' Ititialize form appearence
+		button1.Hide
+		button2.Hide
+		button3.Hide
+		button4.Hide
+		button5.Hide
+		button6.Hide
+		button7.Hide
+		button8.Hide
+		button9.Hide
+		horDiv.Hide
+		
+		
 	End Sub
 End Class

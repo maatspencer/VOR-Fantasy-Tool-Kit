@@ -61,6 +61,7 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\dataObjects.vb" />
     <Compile Include="Draft Toolkit\buildDraftData.vb" />
     <Compile Include="Draft Toolkit\Forms\DraftKit.Designer.vb">
       <DependentUpon>DraftKit.vb</DependentUpon>
@@ -68,6 +69,10 @@
     <Compile Include="Draft Toolkit\Forms\DraftKit.vb" />
     <Compile Include="Draft Toolkit\globalCounters.vb" />
     <Compile Include="Draft Toolkit\UpdateItems.vb" />
+    <Compile Include="Functions\downloadWeekly.vb" />
+    <Compile Include="Functions\getCurrentWeek.vb" />
+    <Compile Include="Functions\populateWeekly.vb" />
+    <Compile Include="Functions\readWeekly.vb" />
     <Compile Include="MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
     </Compile>
@@ -75,10 +80,6 @@
     <Compile Include="Draft Toolkit\Objects\Players.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="Properties\AssemblyInfo.vb" />
-    <Compile Include="splashScreen.Designer.vb">
-      <DependentUpon>splashScreen.vb</DependentUpon>
-    </Compile>
-    <Compile Include="splashScreen.vb" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Settings.settings">
@@ -92,15 +93,14 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="splashScreen.resx">
-      <DependentUpon>splashScreen.vb</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Draft Toolkit\Forms" />
     <Folder Include="Draft Toolkit" />
     <Folder Include="Draft Toolkit\Objects" />
     <Folder Include="League Settings" />
+    <Folder Include="Functions" />
+    <Folder Include="Data" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
